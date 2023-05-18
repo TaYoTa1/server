@@ -8,7 +8,7 @@ class UserService{
     }    
     
 }
-async function AddUser(data) {
+async function AdUser(data) {
     const {Id, email, password } = data
     try {
       const user = await prisma_client.user.create({
